@@ -1,0 +1,584 @@
+:root {
+  --main-background-color: #ffffff;
+  --main-text-color: #212121;
+  --primary-text-color: #757575;
+  --hover-text-color: #2196f3;
+  --background-hero-color: #2f303a;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* --------Секция хедер--------- */
+
+.header-bg {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.blue {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-text-color);
+}
+
+.header-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-text-color);
+}
+
+.site-nav .current {
+  color: var(--hover-text-color);
+}
+
+.site-nav {
+  display: flex;
+}
+
+.content-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 50px;
+}
+
+.mail {
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.envelope,
+.smartphone {
+  display: inline-flex;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.mail:hover .envelope:hover,
+.mail:focus .envelope:focus {
+  fill: var(--hover-text-color);
+}
+
+.mail:hover .smartphone:hover,
+.mail:focus .smartphone:focus {
+  fill: var(--hover-text-color);
+}
+
+/* --------Секция герой--------- */
+
+.hero {
+  background-color: var(--background-hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-bg.jpg);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  cursor: pointer;
+  background: var(--hover-text-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+}
+
+/* --------Секция особенностей----- */
+
+.features-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features-content {
+  padding: 94px 0px;
+}
+
+.features-content-box {
+  display: flex;
+  background: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.specification-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.specification-content {
+  display: flex;
+  gap: 30px;
+}
+
+.specification {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  max-width: 270px;
+}
+
+/* --------Секция работа--------- */
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.work-content {
+  padding-bottom: 94px;
+}
+
+.work-flex {
+  display: flex;
+  gap: 30px;
+}
+
+/* ----------Секция команда---------- */
+
+.team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team-box {
+  background: var(--main-background-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-profession {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--main-background-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--hover-text-color);
+}
+
+/* --------Секция клиентов---------- */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--hover-text-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--hover-text-color);
+}
+
+/* --------Секция футер---------- */
+
+.footer {
+  background-color: var(--background-hero-color);
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  color: var(--main-background-color);
+}
+
+.address-box {
+  margin-right: 70px;
+}
+
+.footer-box {
+  display: flex;
+}
+
+.welcome-list {
+  display: flex;
+  gap: 10px;
+}
+
+.welcome-box {
+  text-align: left;
+}
+
+.contact {
+  margin-bottom: 9px;
+}
+
+.contact:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.footer-mail,
+.footer-tel {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  font-style: normal;
+}
+
+.welcome-title {
+  color: var(--main-background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.welcome-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-soc-link:hover,
+.welcome-soc-link:focus {
+  background-color: var(--hover-text-color);
+}
+
+.welcome-soc-icon {
+  fill: var(--main-background-color);
+}
+
+/* -------Секция портфолио и секция фильтра------- */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background: #f5f4fa;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--main-background-color);
+  background: var(--hover-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-image-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+}
+
+.portfolio-image-name {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-box {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.button-block {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-cards {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.filter-cards:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.filter-cards:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.portfolio-box:hover,
+.portfolio-box:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link {
+  display: block;
+}
