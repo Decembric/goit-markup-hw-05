@@ -142,8 +142,16 @@ body {
   content: "";
   display: block;
   height: 4px;
+  width: 100%;
   background: #2196f3;
   border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+}
+
+.current {
+  position: relative;
 }
 
 /* --------Секция герой--------- */
@@ -183,9 +191,9 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--hover-text-color);
+  color: var(--main-background-color);
   cursor: pointer;
-  background: var(--main-background-color);
+  background: var(--hover-text-color);
   padding: 10px 32px;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -194,8 +202,8 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--main-background-color);
-  background: var(--hover-text-color);
+  color: var(--hover-text-color);
+  background: var(--main-background-color);
 }
 
 /* --------Секция особенностей----- */
@@ -626,12 +634,6 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -653,8 +655,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-cards:hover .portfolio-popup-text,
-.filter-cards:focus .portfolio-popup-text {
+.portfolio-link:hover .portfolio-popup-text,
+.portfolio-link:focus .portfolio-popup-text {
   transform: translateY(0);
 }
 
